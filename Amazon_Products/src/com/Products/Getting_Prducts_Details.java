@@ -85,7 +85,7 @@ public class Getting_Prducts_Details {
 				
 				  com.Connect_Database.Database_Connect.DBConnect(); //
 				  com.Create_Tables.Table_Create.Create_Table();
-				  InsertDataInTable.InsertData(mobile_name,(mobile_price));
+				  InsertDataInTable.InsertData(mobile_name,mobile_price);
 				  InsertDataInTable.InsertData(mens_product_name,mens_product_price);
 				 
 				 
