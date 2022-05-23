@@ -8,7 +8,7 @@ public class InsertDataInTable {
 	
 	public static String InsertQuery = "insert into Products(Product_Name , Product_Price) values (?,?)";
 	
-	public static void InsertData(String mobilename , String mobileprice) {
+	public static void InsertData(String product_name , String product_price) {
 	
 	try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
@@ -20,8 +20,8 @@ public class InsertDataInTable {
 		Connection con = DriverManager.getConnection(DB_URL, DB_USERID, DB_PASSWORD);
 
 		PreparedStatement stmt = con.prepareStatement(InsertQuery);
-		stmt.setString(1,mobilename);
-		stmt.setString(2,mobileprice);
+		stmt.setString(1,product_name);
+		stmt.setString(2,product_price);
 
 		stmt.executeUpdate();
 		System.out.println("Data is inserted");
