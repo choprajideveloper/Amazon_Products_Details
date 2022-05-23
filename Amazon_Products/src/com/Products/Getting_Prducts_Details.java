@@ -28,19 +28,19 @@ public class Getting_Prducts_Details {
 		Submit_Button.click();
 
 		String parentHandle = driver.getWindowHandle();
-		System.out.println(parentHandle);
+// 		System.out.println(parentHandle);
 
-		System.out.println("before click");
+// 		System.out.println("before click");
 		WebElement Apple_Mobile = driver.findElement(By.xpath("//a[@class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal']/span"));
 		Apple_Mobile.click();
 		
 
-		System.out.println("after click");
+// 		System.out.println("after click");
 
 		Set<String> handles = driver.getWindowHandles();
 
-		int count = handles.size();
-		System.out.println(count);
+// 		int count = handles.size();
+// 		System.out.println(count);
 
 		for (String child : handles) {
 
