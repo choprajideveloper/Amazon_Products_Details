@@ -46,7 +46,7 @@ public class Getting_Prducts_Details {
 
 			if (!parentHandle.equalsIgnoreCase(child)) {
 
-				System.out.println("Inside loop");
+// 				System.out.println("Inside loop");
 
 				driver.switchTo().window(child);
 
